@@ -1,0 +1,20 @@
+.mainContainer {
+    height: 100vh;
+    padding: 15rem;
+    background-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainWindow {
+      padding: 0;
+    }
+    .headerTitle {
+      text-align: center;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+  
+  }
+

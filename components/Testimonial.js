@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const Testimonial = () => {
+const Testimonial = () => {
   return (
     <section className="relative isolate overflow-hidden bg-transparent px-6 py-24 sm:py-32 lg:px-8">
       <div className="absolute inset-0 -z-10 opacity-20" />
@@ -34,3 +34,4 @@ export const Testimonial = () => {
     </section>
   );
 };
+export default Testimonial;

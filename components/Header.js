@@ -4,7 +4,6 @@ import { Inter } from 'next/font/google'
 import styles from "./Header.module.css"
 import Link from 'next/link'
 import { BiTime, BiFoodMenu, BiWifi } from "react-icons/bi"
-import Terms from './Terms'
 import TermsTrigger from './TermsTrigger'
 
 const inter = Inter({ subsets: ['latin'] })
