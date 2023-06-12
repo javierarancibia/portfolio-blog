@@ -6,9 +6,15 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Comprar({ data }) {
+//  const getData = async () => const data = await getProduct("gid://shopify/Product/8076015042825");
+const getData = async () =>  fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => response.json())  // Mockup to test fetch
+
+export default async function Comprar() {
 //   const [quantity, setQuantity] = useState(1);
 //   const [checkoutURL, setCheckoutURL] = useState();
+
+const data = await getData()
+console.log(data)
 
 //   const handleAddToCart = async () => {
 //     const cartData =  data && (await addToCart(data.variants.edges[0].node.id, quantity));
@@ -67,9 +73,4 @@ export default function Comprar({ data }) {
   );
 }
 
-// export const getServerSideProps = async () => {
-//   const data = await getProduct("gid://shopify/Product/8076015042825");
-//   return {
-//     props: { data },
-//   };
-// };
+

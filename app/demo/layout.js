@@ -8,8 +8,6 @@ export const metadata = {
 
 export default function DemoLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <section className={inter.className}>{children}</section>
   )
 }
