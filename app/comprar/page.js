@@ -1,31 +1,13 @@
-import { getProduct, addToCart, retrieveCart, getCheckoutUrl }  from "../../utils/shopify";
+"use client"
+
 import Image from "next/image";
-// import React, { useState, useEffect } from "react";
 import styles from "./comprar.module.css";
 import { Inter } from "next/font/google";
+import BuyButton from "./BuyButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
-//  const getData = async () => const data = await getProduct("gid://shopify/Product/8076015042825");
-const getData = async () =>  fetch('https://jsonplaceholder.typicode.com/todos/1').then(response => response.json())  // Mockup to test fetch
-
 export default async function Comprar() {
-//   const [quantity, setQuantity] = useState(1);
-//   const [checkoutURL, setCheckoutURL] = useState();
-
-const data = await getData()
-console.log(data)
-
-//   const handleAddToCart = async () => {
-//     const cartData =  data && (await addToCart(data.variants.edges[0].node.id, quantity));
-//     // const cartRetrieved = await getCheckoutUrl(cartData.cartCreate.cart.id)
-//     const cartCheckoutObject = await getCheckoutUrl(cartData.cartCreate.cart.id);
-//     setCheckoutURL(cartCheckoutObject.cart.checkoutUrl);
-//   };
-
-//   useEffect(() => {
-//     checkoutURL && (window.location.href = checkoutURL);
-//   }, [checkoutURL]);
 
   return (
     <section className="relative flex flex-wrap lg:h-screen lg:items-center bg-gray-800">
@@ -45,15 +27,7 @@ console.log(data)
           ¡No pierdas más tiempo y dinero! Descubre el poder de CommercialCity y obtén tasaciones precisas al instante.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-            <button
-            //   onClick={handleAddToCart}
-              className={`hover:bg-blue-300 mt-10 inline-block rounded-full rounded-lg bg-blue-700 px-12 py-3 text-sm font-medium text-white ${inter.className}`}
-            >
-              Comprar
-            </button>
-            {/* <a href="#" className="text-sm font-semibold leading-6 text-white">
-              Learn more <span aria-hidden="true">→</span>
-            </a> */}
+            <BuyButton />
           </div>
           <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Sólo en comunas de la Región Metropolitana: Providencia, Santiago y Vitacura</p>
         </div>
