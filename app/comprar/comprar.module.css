@@ -61,4 +61,16 @@
 .emailInput {
   margin: 0 1rem;
   height: 3rem;
+  padding: .5rem;
+}
+
+.emailInput::placeholder {
+  font-size: 15px;
+}
+
+.emailInput:focus {
+  outline: solid;
+  outline-width: 3px;
+  outline-color: #517EB9;
+
 }

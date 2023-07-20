@@ -29,7 +29,7 @@ export default async function Comprar() {
           <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
             <BuyButton />
           </div>
-          <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Sólo en comunas de la Región Metropolitana: Providencia, Santiago y Vitacura</p>
+          <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Asegúrate de ingresar la dirección de correo correcta para enviarte el link al formulario después de la compra</p>
         </div>
       </div>
 
