@@ -1,6 +1,3 @@
-"use client"
-// @refresh reset
-
 import Image from "next/image";
 import styles from "../comprar/comprar.module.css";
 import { Inter } from "next/font/google";
