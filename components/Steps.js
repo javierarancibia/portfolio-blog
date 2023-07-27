@@ -56,7 +56,11 @@ const links = [
           </div>
           <div style={{display:"flex", justifyContent: "center"}}>
             <Link href="/comprar">
-                <button type="button" className={`hover:bg-blue-300 mt-10 inline-block rounded-full rounded-lg bg-blue-700 px-12 py-4 text-sm font-medium text-white ${inter.className}`}>Comprar $12.900</button>
+              <button 
+                  type="button" 
+                  className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
+              >Comprar <span style={{textDecoration:"line-through", textDecorationThickness:"1.5px"}}>$12.900</span> $8.990
+              </button>
             </Link>
           </div>
         </div>

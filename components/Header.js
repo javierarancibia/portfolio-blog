@@ -20,7 +20,7 @@ export default function Header() {
                                 <Image src="/logowhite.png" height={100} width={100} className="mb-5 lg:mb-12 w-[5rem] max-w-none sm:w-[7rem] md:-ml-4 lg:-ml-0" unoptimized alt="Tasaciones Online"  />
                             </div>
                             <h2 className={`text-2xl text-center sm:text-left text-blue-700 font-normal ${inter.className}`}>TASACIÓN 100% ONLINE</h2>
-                            <h2 className={`mb-7 text-base font-semibold leading-7 text-white ${inter.className} ${styles.headerTitle}`}>Diseñado para Tasadores, Corredores de Propiedad y Propietarios</h2>
+                            <h2 className={`mb-7 text-base font-semibold leading-7 text-white ${inter.className} ${styles.headerTitle}`}>Diseñado para Propietarios, Corredores de Propiedad y Tasadores</h2>
                             {/* <p className="mt-2 text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">Data</p> */}
                             <div className={`mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl ${styles.headerTitle}`}>
                                 <h1 className={`text-3xl font-bold tracking-tight text-white sm:text-6xl ${inter.className}`}>Commercial<span className="text-blue-700">City</span></h1>
@@ -30,7 +30,7 @@ export default function Header() {
                                     <button 
                                         type="button" 
                                         className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
-                                    >Comprar $12.900
+                                    >Comprar <span style={{textDecoration:"line-through", textDecorationThickness:"1.5px"}}>$12.900</span> $8.990
                                     </button>
                                 </Link>
                                 <Link href="/demo">
@@ -56,7 +56,7 @@ export default function Header() {
                                 </div>
                                 <div>
                                     <BiWifi className={styles.headerIcons} />
-                                    <h5 className={`text-slate-50 text-xs lg:mb-3 font-extralight ${inter.className} antialiased text-center`}>100% ONLINE - SIN DESCARGAS NI SUSCRIPCIONES</h5>
+                                    <h5 className={`text-slate-50 text-xs lg:mb-3 font-extralight ${inter.className} antialiased text-center`}>100% ONLINE - SIN VISITAS NI TASADORES DE POR MEDIO</h5>
                                     {/* <p className={`text-blue-200 text-xs lg:mb-3 font-extralight ${inter.className} antialiased text-justify`}>Nuestro software se actualiza constantemente con la última información del mercado inmobiliario de Santiago. Mantente al tanto de las tendencias y cambios en los precios para tomar decisiones basadas en datos sólidos y mantener una ventaja competitiva en el mercado.</p> */}
                                 </div>
                             </div>
