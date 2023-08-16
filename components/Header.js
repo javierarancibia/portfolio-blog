@@ -33,7 +33,7 @@ export default function Header() {
                                     >Comprar <span style={{textDecoration:"line-through", textDecorationThickness:"1.5px"}}>$12.900</span> $8.990
                                     </button>
                                 </Link>
-                                <Link href="/demo">
+                                <Link href={`${process.env.CLIENT_URL}/demo`}>
                                     <button 
                                         type="button" 
                                         className={`hover:bg-blue-300 mt-5 sm:mt-0 inline-block rounded-full rounded-lg outline outline-offset-1 outline-1 px-10 py-3 text-sm font-medium text-blue-700 hover:text-white ${inter.className}`}
