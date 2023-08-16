@@ -32,7 +32,7 @@ const Terms = ({ setTerms }) => {
         generados utilizando algoritmos programados en base a metodologías de tasación tradicionales, principalmente Valor Comercial por Comparación de Mercado. 
         </p>
         <p className={`mt-6 text-base text-white font-thin ${inter.className}`}>
-        <span className="text-blue-700 font-bold">2.-</span> La App CommercialCity <span className="text-blue-700 font-normal">sólo considera Departamentos</span> (No otros tipos de propiedades) y ubicados en <span className="text-blue-700 font-normal">comunas de la Región Metropolitana como Providencia, Santiago Centro y Vitacura</span>. Estamos constantemente aumentando nuestra 
+        <span className="text-blue-700 font-bold">2.-</span> La App CommercialCity <span className="text-blue-700 font-normal">sólo considera DEPARTAMENTOS</span> (No otros tipos de propiedades) ubicados sólo en las <span className="text-blue-700 font-normal">comunas de la Región Metropolitana indicadas en el listado previo a la compra</span>. Estamos constantemente aumentando nuestra 
         área de cobertura. 
         </p>
         <p className={`mt-6 text-base text-white font-thin ${inter.className}`}>
