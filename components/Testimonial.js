@@ -17,8 +17,8 @@ const Testimonial = () => {
           </blockquote>
           <figcaption className="mt-10">
             <img
-              className="mx-auto h-10 w-10 rounded-full"
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              className="mx-auto h-12 w-12 rounded-full"
+              src="https://drive.google.com/uc?export=view&id=11294Ykg9HrDjv4Y7fb9nE_pKespbUfs3"
               alt="Iturra Propiedades Tasacion Online"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">

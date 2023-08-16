@@ -40,7 +40,7 @@ export default function Header() {
                                     >Ver Demo de Informe
                                     </button>
                                 </Link>
-                                <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Sólo en comunas de la Región Metropolitana: Providencia, Santiago y Vitacura</p>
+                                <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Sólo en comunas de la Región Metropolitana</p>
                                 <TermsTrigger />
                             </div>
                             <div style={{marginTop:"3rem"}} className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">

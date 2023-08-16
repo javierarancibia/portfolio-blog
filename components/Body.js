@@ -28,18 +28,18 @@ export default function Body() {
                         <div className="text-center lg:px-10">
                             <div className="text-2xl font-bold tracking-tight text-white sm:text-4xl" style={{marginTop:"2rem"}}>
                                 <BiBarChart className={styles.headerIcons} style={{fontSize:"90px"}} />
-                                <h2> Ahorra tiempo y esfuerzo</h2> 
-                                <p className={`mt-12 text-lg leading-8 text-white font-thin lg:pl-12 ${inter.className}`}>Ya no es necesario pasar horas investigando y comparando propiedades similares. CommercialCity automatiza el proceso de tasación, brindándote resultados instantáneos y ahorrándote tiempo valioso. Obtén una ventaja competitiva al tomar decisiones informadas de manera rápida y eficiente.</p>
+                                <h2> Ahorra tiempo <span className='text-blue-700'>y esfuerzo</span></h2> 
+                                <p className={`mt-12 text-lg leading-8 text-white font-thin lg:pl-12 ${inter.className}`}>Ya no es necesario pasar horas investigando y comparando propiedades similares. Commercial<span className='text-blue-700 font-medium'>City</span> automatiza el proceso de tasación, brindándote resultados instantáneos y ahorrándote tiempo valioso. Obtén una ventaja competitiva al tomar decisiones informadas de manera rápida y eficiente.</p>
                             </div>
                             <div className="text-2xl font-bold tracking-tight text-white sm:text-4xl text-center lg:pl-12" style={{marginTop:"8rem"}}>
                                 <BiBarChart className={styles.headerIcons} style={{fontSize:"90px"}} />
-                                <h2>Datos actualizados y Algoritmos basadas en metodologías de tasación tradicional.</h2>
+                                <h2>Datos actualizados y Algoritmos basadas en <span className='text-blue-700'>Metodologías de tasación tradicional</span></h2>
                                 <p className={`mt-12 text-lg leading-8 text-white font-thin lg:pl-12 ${inter.className}`}>Nuestro software se actualiza constantemente con la última información del mercado inmobiliario de Santiago. Mantente al tanto de las tendencias y cambios en los precios para tomar decisiones basadas en datos sólidos y mantener una ventaja competitiva en el mercado.</p>
                             </div>
                             <div className="text-2xl font-bold tracking-tight text-white sm:text-4xl text-center lg:pl-12" style={{marginTop:"8rem"}}>
                                 <BiBarChart className={styles.headerIcons} style={{fontSize:"90px"}} />
-                                <h2>Fácil de Usar y Disponible para Desktop y Móvil</h2>
-                                <p className={`mt-12 text-lg leading-8 text-white font-thin lg:pl-12 ${inter.className}`}>No se requieren habilidades técnicas o conocimientos especializados para utilizar CommercialCity. Nuestra interfaz intuitiva y amigable te guiará a través del proceso de tasación sin complicaciones. Con solo unos pocos clics, obtendrás resultados precisos y detallados. Además está adaptada para todas las plataformas, sea en pantalla de computador o tu celular.</p>
+                                <h2>Fácil de Usar y Disponible para <span className='text-blue-700'>Desktop y Móvil</span></h2>
+                                <p className={`mt-12 text-lg leading-8 text-white font-thin lg:pl-12 ${inter.className}`}>No se requieren habilidades técnicas o conocimientos especializados para utilizar Commercial<span className='text-blue-700 font-medium'>City</span>. Nuestra interfaz intuitiva y amigable te guiará a través del proceso de tasación sin complicaciones. Con solo unos pocos clics, obtendrás resultados precisos y detallados. Además está adaptada para todas las plataformas, sea en pantalla de computador o tu celular.</p>
                             </div>
                         </div>
                     </div>
