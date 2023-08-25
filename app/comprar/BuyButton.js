@@ -27,7 +27,7 @@ const Product = () => {
                 <option value="Providencia">Providencia</option>
                 <option value="Santiago">Santiago Centro</option>
                 <option value="Maipú">Maipú</option>
-                <option value="San Miguel">San Miguel</option>
+                <option value="Vitacura">Vitacura</option>
             </select>
             { chosenCity && <p className={`mt-3 italic text-xs font-bold text-blue-700 ${inter.className}`}>¡Perfecto! Contamos con datos suficientes para la comuna de {chosenCity}</p> }
         </div>
