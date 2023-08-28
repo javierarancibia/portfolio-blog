@@ -26,11 +26,11 @@ export default function Header() {
                                 <h1 className={`text-3xl font-bold tracking-tight text-white sm:text-6xl ${inter.className}`}>Commercial<span className="text-blue-700">City</span></h1>
                                 <h2 className={`mt-6 text-lg sm:text-2xl leading-8 text-white font-normal ${inter.className}`}>Obtén el precio de tu departamento en segundos</h2>
                                 <p className={`mt-6 text-lg leading-8 text-white font-thin ${inter.className}`}>Nuestros algoritmos calculan el valor real de tu departamento en base a valores de mercado actuales, generando un informe profesional para ti en solo segundos</p>
-                                <Link href="/comprar">
+                                <Link href="/probar">
                                     <button 
                                         type="button" 
                                         className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
-                                    >Comienza ya!
+                                    >Probar Ahora
                                     </button>
                                 </Link>
                                 <Link href={`${process.env.CLIENT_URL}/demo`}>
