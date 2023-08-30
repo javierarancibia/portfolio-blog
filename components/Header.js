@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from "./Header.module.css"
-import Link from 'next/link'
 import { BiTime, BiFoodMenu, BiWifi } from "react-icons/bi"
 import TermsTrigger from './TermsTrigger'
 import BuyButton from "../app/probar/BuyButton"
@@ -29,7 +28,7 @@ export default function Header() {
                                 <p className={`mt-6 text-lg leading-8 text-white font-thin ${inter.className}`}>Nuestros algoritmos calculan el valor real de tu departamento en base a valores de mercado actuales, generando un informe profesional para ti en solo segundos</p>
                                 
                                 <BuyButton />
-                                
+
                                 <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Sólo en comunas de la Región Metropolitana</p>
                                 <TermsTrigger />
                             </div>
