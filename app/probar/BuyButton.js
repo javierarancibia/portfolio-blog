@@ -23,7 +23,7 @@ const Product = () => {
                 className="bg-gray-50 outline-blue-500 border border-gray-300 text-blue-700 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-blue-700 dark:text-white dark:focus:ring-blue-700 dark:focus:border-blue-700"
                 onChange={e => setChosenCity(e.target.value)}
             >
-                <option value="">Selecciona donde se encuentra el departamento</option>
+                <option value="">Donde se encuentra el departamento</option>
                 <option value="Providencia">Providencia</option>
                 <option value="Santiago">Santiago Centro</option>
                 <option value="Maipú">Maipú</option>
