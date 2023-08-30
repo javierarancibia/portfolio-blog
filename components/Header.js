@@ -5,6 +5,7 @@ import styles from "./Header.module.css"
 import Link from 'next/link'
 import { BiTime, BiFoodMenu, BiWifi } from "react-icons/bi"
 import TermsTrigger from './TermsTrigger'
+import BuyButton from "../app/probar/BuyButton"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,20 +27,9 @@ export default function Header() {
                                 <h1 className={`text-3xl font-bold tracking-tight text-white sm:text-6xl ${inter.className}`}>Commercial<span className="text-blue-700">City</span></h1>
                                 <h2 className={`mt-6 text-lg sm:text-2xl leading-8 text-white font-normal ${inter.className}`}>Obtén el precio de tu departamento en segundos</h2>
                                 <p className={`mt-6 text-lg leading-8 text-white font-thin ${inter.className}`}>Nuestros algoritmos calculan el valor real de tu departamento en base a valores de mercado actuales, generando un informe profesional para ti en solo segundos</p>
-                                <Link href="/probar">
-                                    <button 
-                                        type="button" 
-                                        className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
-                                    >Probar Ahora
-                                    </button>
-                                </Link>
-                                <Link href={`${process.env.CLIENT_URL}/demo`}>
-                                    <button 
-                                        type="button" 
-                                        className={`hover:bg-blue-300 mt-5 sm:mt-0 inline-block rounded-full rounded-lg outline outline-offset-1 outline-1 px-10 py-3 text-sm font-medium text-blue-700 hover:text-white ${inter.className}`}
-                                    >Ver Demo de Informe
-                                    </button>
-                                </Link>
+                                
+                                <BuyButton />
+                                
                                 <p className={`mt-6 italic text-sm font-thin leading-7 text-white ${inter.className}`}>* Sólo en comunas de la Región Metropolitana</p>
                                 <TermsTrigger />
                             </div>

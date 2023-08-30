@@ -16,11 +16,11 @@ const Product = () => {
     }, [ chosenCity ])
 
     return (
-    <div className="grid grid-rows-3 lg:w-full">
+    <div className="mt-10">
         <div>
             <select 
                 id="cities" 
-                className="bg-gray-50 outline-blue-500 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-700 dark:focus:border-blue-700"
+                className="bg-gray-50 outline-blue-500 border border-gray-300 text-blue-700 text-sm rounded-lg focus:ring-blue-700 focus:border-blue-700 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-blue-700 dark:text-white dark:focus:ring-blue-700 dark:focus:border-blue-700"
                 onChange={e => setChosenCity(e.target.value)}
             >
                 <option value="">Selecciona donde se encuentra el departamento</option>
@@ -34,23 +34,28 @@ const Product = () => {
 
         { 
             buttonValidator ? 
-            <div>
                 <button
-                    className={`mt-10 inline-block rounded-full rounded-lg bg-slate-300 px-12 py-3 text-sm font-medium text-white ${inter.className}`}
+                    className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-slate-300 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
                     disabled={true}
                 >
                     Ingresar
-                </button>
-            </div> : 
-            <Link href='https://commercial-city-client.vercel.app/formulario'>
-                <button
-                type="button"
-                    className={`mt-10 inline-block rounded-full rounded-lg bg-blue-700 px-12 py-3 text-sm font-medium text-white ${inter.className}`}
-                >
-                    Ingresar
-                </button>
-            </Link>
+                </button> :
+                <Link href={`${process.env.CLIENT_URL}/formulario`}>
+                    <button
+                        type="button"
+                        className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
+                        >
+                        Ingresar
+                    </button>
+                </Link>
         }
+        <Link href={`${process.env.CLIENT_URL}/demo`}>
+            <button 
+                type="button" 
+                className={`hover:bg-blue-300 mt-5 sm:mt-0 inline-block rounded-full rounded-lg outline outline-offset-1 outline-1 px-10 py-3 text-sm font-medium text-blue-700 hover:text-white ${inter.className}`}
+            >Ver Demo de Informe
+            </button>
+        </Link>
     </div >
     );
 };
