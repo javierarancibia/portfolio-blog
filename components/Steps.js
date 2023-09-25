@@ -41,7 +41,7 @@ const links = [
           />
         </div>
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className={`text-2xl font-bold tracking-tight text-blue-700 sm:text-3xl text-center ${inter.className}`}>Obtén la tasación de tu departamento en 4 simples pasos</h2>
+          <h3 className={`text-2xl font-bold tracking-tight text-blue-700 sm:text-3xl text-center ${inter.className}`}>Obtén la tasación de tu departamento en 4 simples pasos</h3>
           <p className={`mt-6 text-lg text-white font-thin text-center ${inter.className}`}>
           No se requieren habilidades técnicas o conocimientos especializados para utilizar CommercialCity. Nuestra interfaz intuitiva y amigable te guiará a través del proceso de tasación sin complicaciones. Con solo unos pocos clics, obtendrás resultados precisos y detallados.
           </p>

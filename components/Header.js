@@ -19,12 +19,12 @@ export default function Header() {
                             <div className={styles.logo} >
                                 <Image src="/logowhite.png" height={100} width={100} className="mb-5 lg:mb-12 w-[5rem] max-w-none sm:w-[7rem] md:-ml-4 lg:-ml-0" unoptimized alt="Tasaciones Online"  />
                             </div>
-                            <h2 className={`text-2xl text-center sm:text-left text-blue-700 font-normal ${inter.className}`}>TASACIÓN 100% ONLINE</h2>
+                            <h1 className={`text-2xl text-center sm:text-left text-blue-700 font-normal ${inter.className}`}>TASACIÓN 100% ONLINE</h1>
                             <h2 className={`mb-7 text-base font-semibold leading-7 text-white ${inter.className} ${styles.headerTitle}`}>Diseñado para Propietarios, Corredores de Propiedad y Tasadores</h2>
                             {/* <p className="mt-2 text-3xl font-bold tracking-tight text-white-900 sm:text-4xl">Data</p> */}
                             <div className={`mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl ${styles.headerTitle}`}>
-                                <h1 className={`text-3xl font-bold tracking-tight text-white sm:text-6xl ${inter.className}`}>Commercial<span className="text-blue-700">City</span></h1>
-                                <h2 className={`mt-6 text-lg sm:text-2xl leading-8 text-white font-normal ${inter.className}`}>Obtén el precio de tu departamento en segundos</h2>
+                                <h3 className={`text-3xl font-bold tracking-tight text-white sm:text-6xl ${inter.className}`}>Commercial<span className="text-blue-700">City</span></h3>
+                                <h4 className={`mt-6 text-lg sm:text-2xl leading-8 text-white font-normal ${inter.className}`}>Obtén el precio de tu departamento en segundos</h4>
                                 <p className={`mt-6 text-lg leading-8 text-white font-thin ${inter.className}`}>Nuestros algoritmos calculan el valor real de tu departamento en base a valores de mercado actuales, generando un informe profesional para ti en solo segundos</p>
                                 
                                 <BuyButton />
@@ -51,7 +51,7 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    <Image src="/hero.png" height={800} width={800} className={`w-[25rem] max-w-none sm:w-[55rem] md:-ml-4 lg:-ml-0 ${styles.mainImage}`} unoptimized alt="hero"  />
+                    <Image src="/hero.png" height={800} width={800} className={`w-[25rem] max-w-none sm:w-[55rem] md:-ml-4 lg:-ml-0 ${styles.mainImage}`} unoptimized alt="Tasaciones online"  />
                 </div>
             </div>
         </div>
