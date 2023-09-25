@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'CommercialCity: Obtén el precio de tu Departamento en segundos',
-  description: 'Tasaciones 100% Online de tu departamento. Fácil e inmediato. Despeja la duda sobre el precio de tu departamento.',
+  description: 'Tasación 100% Online de tu departamento. Fácil e inmediato.',
   keywords: ['Tasaciones Online', 'Como tasar tu departamento', 'Cuanto cuesta mi departamento', 'Tasadores Chile', 'como saber tasacion de una vivienda'],
   alternates: {
     canonical: 'https://www.ciudad-comercial.cl',
