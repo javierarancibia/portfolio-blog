@@ -4,5 +4,9 @@ export default function sitemap() {
       url: "https://www.ciudad-comercial.cl",
       lastModified: new Date(),
     },
+    {
+      url: "https://www.ciudad-comercial.cl/calculadora-uf",
+      lastModified: new Date(),
+    },
   ];
 }

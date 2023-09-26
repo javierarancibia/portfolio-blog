@@ -1,0 +1,25 @@
+.mainContainer {
+  height: 100%;
+  background: #ffffff;
+  /* padding: 5rem; */
+}
+
+.header {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  border: solid 1px #517eb9;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #517EB9;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 25px;
+}
