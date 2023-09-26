@@ -31,24 +31,15 @@ const Product = () => {
             </select>
             { chosenCity && <p className={`mt-3 italic text-xs font-bold text-blue-700 ${inter.className}`}>¡Perfecto! Contamos con datos suficientes para la comuna de {chosenCity}</p> }
         </div>
-
-        { 
-            buttonValidator ? 
-                <button
-                    className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-slate-300 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
-                    disabled={true}
+        <Link href={`${process.env.CLIENT_URL}/formulario`}>
+            <button
+                type="button"
+                disabled={buttonValidator}
+                className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
                 >
-                    Ingresar
-                </button> :
-                <Link href={`${process.env.CLIENT_URL}/formulario`}>
-                    <button
-                        type="button"
-                        className={`hover:bg-blue-300 mt-10 sm:mr-5 inline-block rounded-full rounded-lg bg-blue-700 px-10 py-3 text-sm font-medium text-white ${inter.className}`}
-                        >
-                        Ingresar
-                    </button>
-                </Link>
-        }
+                Ingresar
+            </button>
+        </Link>
         <Link href={`${process.env.CLIENT_URL}/demo`}>
             <button 
                 type="button" 
