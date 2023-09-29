@@ -17,12 +17,12 @@ export default async function Page() {
           {posts.map((post) => (
             <article key={post._id} className="flex max-w-xl flex-col items-start justify-between">
               <Image 
-                src="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" 
-                alt="sdg" 
+                src={post.image.src} 
+                alt={post.image.alt}
                 width={500}
                 height={300}
                 placeholder="blur"
-                blurDataURL="https://flowbite.s3.amazonaws.com/typography-plugin/typography-image-1.png" 
+                blurDataURL={post.image.src} 
               />
               <div className="flex items-center gap-x-4 text-xs">
                 <time dateTime={post.datetime} className="text-gray-500">
