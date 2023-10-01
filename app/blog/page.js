@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export default async function Page() {
   const posts = await getAllPosts()
-  
+
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -17,25 +17,25 @@ export default async function Page() {
           {posts.map((post) => (
             <article key={post._id} className="flex max-w-xl flex-col items-start justify-between">
               <Image 
-                src={post.image.src} 
-                alt={post.image.alt}
+                src={post.image?.src || "/blog-inmobiliario.png"} 
+                alt={post.image?.alt || "/blog-inmobiliario.png"}
                 width={500}
                 height={300}
                 placeholder="blur"
-                blurDataURL={post.image.src} 
+                blurDataURL={post.image?.src || "/blog-inmobiliario.png"} 
+                className="rounded-3xl mb-5"
               />
               <div className="flex items-center gap-x-4 text-xs">
                 <time dateTime={post.datetime} className="text-gray-500">
                   {post.date}
                 </time>
-                {/* { post.categories.map(cat => (
+                
+                  { post.categories.map(cat => (
                     <a
                       className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                    >
-                      {post}
-                    </a>
-                  ))
-                } */}
+                      >{cat}</a> 
+                    ))
+                  }
               </div>
               <div className="group relative">
                 <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
