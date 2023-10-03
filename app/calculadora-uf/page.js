@@ -24,15 +24,11 @@ export default async function Page() {
             <Navbar />
             <main className={styles.mainContainer}>
                 <div className="relative" id="home">
-                    <div aria-hidden="true" className="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
-                        <div className="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
-                        <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
-                    </div>
                     <div>
                         <div className="relative pt-36 ml-auto">
                             <div className="lg:w-2/3 text-center mx-auto">
-                                <h1 className="text-blue-700 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Calculadora UF a CLP</h1>
-                                <h2 className="mt-8 text-gray-700 dark:text-gray-300 text-xl">Calcula la conversión de Unindad de Fomento (UF) a Pesos Chilenos y viceversa en segundos</h2>
+                                <h1 className="text-blue-700 font-bold text-5xl md:text-6xl xl:text-7xl">Calculadora UF a CLP</h1>
+                                <h2 className="mt-8 text-gray-700 text-xl">Calcula la conversión de Unindad de Fomento (UF) a Pesos Chilenos y viceversa en segundos</h2>
                                 <div className='mb-28 mt-11'>
                                     { data && <CalculatorComponent data={data} /> } 
                                 </div>

@@ -34,7 +34,7 @@ const CalculatorComponent = ({ data }) => {
                             <p className="text-red-500 text-xl font-light">Ingrese un número valido</p>)}
                     </div>
                 </div>
-                <div className="sm:col-span-3">
+                <div className="sm:col-span-3 mb-72">
                     <label htmlFor="pesos-chilenos" className="block text-lg font-semibold leading-6 text-blue-700">
                         Pesos Chilenos
                     </label>
