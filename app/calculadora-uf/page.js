@@ -28,7 +28,7 @@ export default async function Page() {
                         <div className="relative pt-36 ml-auto">
                             <div className="lg:w-2/3 text-center mx-auto">
                                 <h1 className="text-blue-700 font-bold text-5xl md:text-6xl xl:text-7xl">Calculadora UF a CLP</h1>
-                                <h2 className="mt-8 text-gray-700 text-xl">Calcula la conversión de Unindad de Fomento (UF) a Pesos Chilenos y viceversa en segundos</h2>
+                                <h2 className="mt-8 text-gray-700 text-xl">Calcula la conversión de Unidad de Fomento (UF) a Pesos Chilenos y viceversa en segundos</h2>
                                 <div className='mb-28 mt-11'>
                                     { data && <CalculatorComponent data={data} /> } 
                                 </div>
