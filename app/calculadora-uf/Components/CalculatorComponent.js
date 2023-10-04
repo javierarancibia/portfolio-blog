@@ -6,15 +6,15 @@ const CalculatorComponent = ({ data }) => {
     const [ufPrice, setUfPrice] = useState(0);
     const [pesos, setPesos] = useState(0);
 
-    const timestampFormatter = dateString => {
-        const date = dateString.slice(8, 10) + "/" + dateString.slice(5, 7) + "/" + dateString.slice(0, 4)
-        return date
+    const dateHandler = date => {
+        const newDate = new Date(date)
+        return newDate.toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })
     }
 
      return (
         <>
-            <h5 className="text-blue-700 font-semibold text-xl">Valor UF de hoy: ${val}</h5>
-            <h6 className="text-sm">{ timestampFormatter(data.serie[0].fecha) }</h6>
+            <h5 className="text-blue-700 font-semibold text-md">Valor UF de hoy: ${val}</h5>
+            <h6 className="text-sm">{ dateHandler(data.serie[0].fecha) }</h6>
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                     <label htmlFor="uf" className="block text-lg font-semibold leading-6 text-blue-700">
@@ -34,7 +34,7 @@ const CalculatorComponent = ({ data }) => {
                             <p className="text-red-500 text-xl font-light">Ingrese un número valido</p>)}
                     </div>
                 </div>
-                <div className="sm:col-span-3 mb-72">
+                <div className="sm:col-span-3">
                     <label htmlFor="pesos-chilenos" className="block text-lg font-semibold leading-6 text-blue-700">
                         Pesos Chilenos
                     </label>
