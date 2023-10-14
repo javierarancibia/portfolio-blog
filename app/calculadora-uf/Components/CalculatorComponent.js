@@ -1,20 +1,40 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import styles from "../CalculadoraUF.module.css"
 
-const CalculatorComponent = ({ data }) => {
-    const [val] = useState(data.serie[0].valor);
+const CalculatorComponent = () => {
+    const [val, setVal] = useState();
+    const [date, setDate] = useState();
     const [ufPrice, setUfPrice] = useState(0);
     const [pesos, setPesos] = useState(0);
+
+    useEffect(() => {
+        const timestamp = new Date().getTime();
+        axios.get(`https://mindicador.cl/api/uf?${timestamp}`).then(res => {
+            setVal(res.data.serie[0].valor)
+            setDate(res.data.serie[0].fecha)
+        })
+    }) 
 
     const dateHandler = date => {
         const newDate = new Date(date)
         return newDate.toLocaleDateString("es-ES", { year: "numeric", month: "long", day: "numeric" })
     }
 
-     return (
+    if (!val && !date) {
+        return(
+            <>
+                <div className={styles.ldsRing}><div></div><div></div><div></div><div></div></div>
+                <h4 className={styles.loadingMsg}>Cargando ...</h4>
+            </>
+        ) 
+    } 
+
+    return (
         <>
             <h5 className="text-blue-700 font-semibold text-md">Valor UF de hoy: ${val}</h5>
-            <h6 className="text-sm">{ dateHandler(data.serie[0].fecha) }</h6>
+            <h6 className="text-sm">{ dateHandler(date) }</h6>
             <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                 <div className="sm:col-span-3">
                     <label htmlFor="uf" className="block text-lg font-semibold leading-6 text-blue-700">
@@ -29,7 +49,7 @@ const CalculatorComponent = ({ data }) => {
                             autoComplete="off"
                             placeholder="Ingrese Valor UF"
                             className="block w-full rounded-xl border-0 p-3 text-blue-700 shadow-sm ring-1 ring-inset ring-blue-700 focus:ring-inset focus:ring-blue-700 sm:text-lg sm:leading-6"
-                        />
+                            />
                         {!isNaN(pesos) ? (<p className="text-center text-blue-700 text-3xl">${pesos.toFixed().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}</p>) : (
                             <p className="text-red-500 text-xl font-light">Ingrese un número valido</p>)}
                     </div>
@@ -53,7 +73,6 @@ const CalculatorComponent = ({ data }) => {
                 </div>
             </div>
         </>
-        
     );
 };
 export default CalculatorComponent;

@@ -4,20 +4,7 @@ import CalculatorComponent from './Components/CalculatorComponent'
 import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 
-async function getData() {
-    const timestamp = new Date().getTime();
-    const res = await fetch(`https://mindicador.cl/api/uf?${timestamp}`)
-   
-    if (!res.ok) {
-      throw new Error('Failed to fetch data')
-    }
-   
-    return res.json()
-  }
-  
-
 export default async function Page() {
-    const data = await getData()
     return (
         <>
             <Navbar />
@@ -29,7 +16,7 @@ export default async function Page() {
                                 <h1 className="text-blue-700 font-bold text-3xl md:text-6xl xl:text-5xl">Calculadora UF a Pesos Chilenos</h1>
                                 <h2 className="mt-8 text-gray-700 text-lg xl:text-2xl">Calcular UF a Pesos Chilenos y viceversa en segundos</h2>
                                 <div className='mb-10'>
-                                    { data && <CalculatorComponent data={data} /> } 
+                                    <CalculatorComponent /> 
                                 </div>
                                 <div style={{width:"100%"}}>
                                     <Image 
@@ -39,7 +26,7 @@ export default async function Page() {
                                         height={300} 
                                         placeholder="blur" 
                                         blurDataURL={'/calculator.png'}
-                                        style={{margin:"auto"}}
+                                        style={{margin:"5rem auto 8rem auto", paddingBottom:"8rem"}}
                                     />
                                 </div>
                             </div>
