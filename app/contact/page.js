@@ -1,5 +1,10 @@
+import Navbar from "@/components/Navbar"
 import ContactComponent from "./ContactComponent"
 
 export default async function Page() { 
-    return <ContactComponent />
+    return (
+        <Navbar>
+            <ContactComponent />
+        </Navbar>
+    ) 
 }
