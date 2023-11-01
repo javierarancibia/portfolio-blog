@@ -5,7 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'CommercialCity: Obtén el precio de tu Departamento en segundos',
+  title: 'Fullstack NodeJS Developer based in Rotterdam, Netherlands',
   description: 'Tasación 100% Online de tu departamento. Fácil e inmediato.',
   keywords: ['Tasaciones Online', 'Como tasar tu departamento', 'Cuanto cuesta mi departamento', 'Tasadores Chile', 'como saber tasacion de una vivienda'],
   alternates: {
