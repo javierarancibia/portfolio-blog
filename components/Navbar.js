@@ -7,6 +7,7 @@ export default function Navbar({children})  {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     
     const navigation = [
+        { name: 'Home', href: '/' },
         { name: 'Portfolio', href: '/portfolio' },
         { name: 'About Me', href: '/about' },
         { name: 'Tech Blog', href: '/blog' },

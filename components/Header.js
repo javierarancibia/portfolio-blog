@@ -1,7 +1,10 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
+import Image from "next/image"
+import { FaLinkedinIn, FaGithubAlt, FaStackOverflow  } from "react-icons/fa";
+import styles from "./Header.module.css"
 
 const navigation = [
   { name: 'Portfolio', href: '/portfolio' },
@@ -12,9 +15,26 @@ const navigation = [
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [display, setDisplay] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setDisplay(true);
+    }, 2000);
+  }, []);
+
+  if (!display) {
+    return (
+      <div className="bg-white flex items-center justify-center px-5 h-screen">
+          <Image src="/spinner.gif" width={400} height={400} />
+          <Image src="/spinner.gif" width={400} height={400} />
+          <Image src="/spinner.gif" width={400} height={400} />
+      </div>
+    )
+  }
 
   return (
-    <div className="bg-white">
+    <div className="bg-white h-screen">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -94,7 +114,10 @@ export default function Example() {
       </header>
 
       <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl  sm:py-48 lg:py-6"> 
+          <div className="flex items-center justify-center">
+            <Image src="/spaceship.gif" width={250} height={200} />
+          </div>
             <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                 <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
                 Building client friendly Fullstack Web Apps for the future
@@ -102,22 +125,25 @@ export default function Example() {
             </div>
             <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Fullstack <span className='underline decoration-pink-500'>Developer</span> NodeJS - ReactJS
+                Fullstack <span style={{textDecoration:"underline", textDecorationColor:"#f35a4b" }}>Developer</span> <span style={{color:"#4376f0"}}>NodeJS - ReactJS</span>
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                     I'm a Fullstack Developer based in Rotterdam, Netherlands.
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
-                    href="/portfolio"
-                    className="rounded-md bg-indigo-600 px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                    Portfolio
-                </a>
-                <a href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
-                    Tech Blog<span aria-hidden="true">→</span>
-                </a>
+                  <a
+                      href="/portfolio"
+                      className="rounded-md bg-blue-500 px-8 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  >
+                      Portfolio
+                  </a>
+                  <a href="/blog" className="text-sm font-semibold leading-6 text-gray-900">
+                      Tech Blog<span aria-hidden="true">→</span>
+                  </a>
                 </div>
+                <a className={styles.linkedinIcon} href="https://www.linkedin.com/in/javier-arancibia/" target="_blank"><FaLinkedinIn /></a>
+                <a className={styles.githubIcon} href="https://github.com/javierarancibia" target="_blank"><FaGithubAlt /></a>
+                <a className={styles.stackoverflowIcon} href="https://stackoverflow.com/users/16550294/javier-arancibia-reyes" target="_blank"><FaStackOverflow /></a>
             </div>
         </div>
         <div

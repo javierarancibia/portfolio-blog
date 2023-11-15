@@ -1,106 +1,21 @@
-.mainWindow {
-    /* padding: 0 2rem; */
-    background-color: #ffffff;
+
+  .linkedinIcon {
+    display: inline-block;
+    margin: 2rem 1rem;
+    font-size: 25px;
+    color: #2563eb
   }
   
-  /* Modo Mobile */
-  @media only screen and (max-width: 600px) {
-    .mainWindow {
-      padding: 0;
-    }
-    .headerTitle {
-      text-align: center;
-    }
-    .logo {
-      display: flex;
-      justify-content: center;
-    }
-  
+  .githubIcon {
+    display: inline-block;
+    margin: 2rem 1rem;
+    font-size: 25px;
+    color: #f35a4b
   }
-  
-  /* Modo Desktop */
-  @media only screen and (min-width: 600px) {
-    .reportImage {
-      margin-left: 5rem;
-      margin-top: -9rem;
-    }
-    .logo {
-      margin-top: -10rem;
-      margin-bottom: 7rem;
-    }
+
+  .stackoverflowIcon {
+    display: inline-block;
+    margin: 2rem 1rem;
+    font-size: 25px;
+    color: #1e40af
   }
-  
-  .mainCard {
-    height: 100%;
-    /* border-radius: 30px; */
-    background: rgba(31, 41, 55);
-    background: linear-gradient(90deg, rgba(31,41,55,1) 75%, rgba(42,59,83,1) 85%, rgba(81,126,185,1) 100%);
-  }
-  
-  .mainImage {
-    -webkit-filter: drop-shadow(5px 5px 5px #a30808);
-    filter: drop-shadow(5px 5px 40px #517EB9);
-  }
-  
-  .headerIcons{ 
-    display: block;
-    color: #517EB9;
-    font-size: 55px;
-    text-align: center;
-    margin: 1rem auto;
-  }
-  
-  .logoContainer {
-    padding: 4rem 5rem;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 20px;
-  }
-  
-  .titleContainer {
-    color: #ffffff;
-    padding: 0 4rem;
-  }
-  
-  .titleContainer h1 {
-    font-size: 55px;
-    font-weight: 700;
-    margin-top: 10rem;
-  }
-  
-  .titleContainer h2 {
-    font-size: 30px;
-    font-weight: 700;
-    text-align: left;
-  }
-  
-  .titleContainer p {
-    margin-top: 2rem;
-  }
-  
-  .buyButton {
-    margin-top: 2rem;
-    border: solid 1px #ffffff;
-    padding: 1rem 3rem;
-    border-radius: 40px;
-  }
-  
-  .quote {
-    display: flex;
-    justify-content: end;
-  }
-  
-  .quote p {
-    text-align: right;
-    width: 50%;
-    font-style: italic;
-    margin-right: 3rem;
-    color: #517eb9;
-  }
-  
-  .termsButton {
-    color: #517EB9;
-    text-decoration: underline;
-    font-size: 15px;
-  }
-  

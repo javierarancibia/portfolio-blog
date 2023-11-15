@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar'
 import { ArrowPathIcon, CloudArrowUpIcon, FingerPrintIcon, LockClosedIcon } from '@heroicons/react/24/outline'
+import Image from "next/image"
+
 
 const features = [
   {
@@ -42,6 +44,9 @@ export default function Example() {
               Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
               pulvinar et feugiat blandit at. In mi viverra elit nunc.
             </p>
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src="/astronaut.gif" width={100} height={200} />
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
